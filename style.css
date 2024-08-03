@@ -1,22 +1,60 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: aliceblue;
+  margin: 0;
 }
 
-h1 {
-  color: #b62b2b;
-  font-size: 2.5em;
+.header {
+  background-color: #b62b2b;
+}
+
+.title {
+  margin: 0;
+  padding: 0.5em;
+  color: black;
+  font-size: 3em;
   text-align: center;
+}
+
+.logo {
+  width: 10%;
+  height: auto;
+  margin-left: 60px;
+}
+
+.container {
+  background-color: white;
+  margin: 1em;
+}
+
+.recetas {
+  padding: 1em 2.5em;
+  margin: 0;
 }
 
 li {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 20px;
+  line-height: 60px;
+  font-size: 1.2em;
 }
+
 .recetas a {
   text-decoration: none;
-  color: #473e3e;
+  color: black;
   font-weight: bold;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.recetas a:hover {
+  background-color: #f5f5f5;
+  color: #b62b2b;
+  transform: translateX(5px);
 }
